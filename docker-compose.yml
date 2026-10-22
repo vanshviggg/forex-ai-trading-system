@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: development
+      LOG_LEVEL: INFO
+      DEFAULT_SYMBOL: EURUSD
+      DEFAULT_PERIOD: 2y
+      DEFAULT_INTERVAL: 1d
+      RISK_PER_TRADE: "0.01"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
