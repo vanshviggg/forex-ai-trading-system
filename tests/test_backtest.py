@@ -3,10 +3,10 @@
 import numpy as np
 import pandas as pd
 import pytest
-from tests.conftest import make_ohlcv
 
 from forex_ai.backtesting.engine import BacktestConfig, run_backtest
 from forex_ai.backtesting.metrics import compute_metrics
+from tests.conftest import make_ohlcv
 
 
 def _frame(rows: list[tuple]) -> pd.DataFrame:

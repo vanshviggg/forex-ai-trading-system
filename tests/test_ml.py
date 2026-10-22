@@ -5,11 +5,11 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import pytest
-from tests.conftest import make_ohlcv
 
 from forex_ai.ml.evaluation import evaluate_model
 from forex_ai.ml.features import FEATURE_COLUMNS, make_target, supervised_dataset
 from forex_ai.ml.train import chronological_split, train_model
+from tests.conftest import make_ohlcv
 
 
 def test_target_uses_only_the_next_close() -> None:

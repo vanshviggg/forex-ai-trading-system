@@ -1,9 +1,9 @@
 """Deterministic signal rules."""
 
 import pandas as pd
-from tests.conftest import make_ohlcv
 
 from forex_ai.strategies.signal_engine import score_observation, signals_for_frame
+from tests.conftest import make_ohlcv
 
 BULLISH = {
     "close": 1.2,

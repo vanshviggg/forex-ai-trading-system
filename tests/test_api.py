@@ -1,12 +1,12 @@
 """API health, validation, and offline research routes."""
 
 from fastapi.testclient import TestClient
-from tests.conftest import make_ohlcv
 
 from forex_ai.api.main import create_app, get_provider
 from forex_ai.config import Settings
 from forex_ai.data.market_data import MarketDataProvider
 from forex_ai.ml.train import train_model
+from tests.conftest import make_ohlcv
 
 
 def _client(tmp_path, frame, with_model: bool = False):

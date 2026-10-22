@@ -47,4 +47,4 @@ select = ["E", "F", "I", "UP", "B"]
 "src/forex_ai/api/main.py" = ["B008"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["forex_ai"]
+known-first-party = ["forex_ai", "tests"]
